@@ -6,7 +6,7 @@ public struct Player: Codable {
     public let lastName: String
     public let fullName: String?
     public let age: Int?
-    public let status: SleeperPlayerStatus?
+    public let status: PlayerStatus?
     public let active: Bool
     public let injuryStatus: InjuryStatus?
     public let fantasyPositions: [NflPosition]?
