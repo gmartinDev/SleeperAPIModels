@@ -1,4 +1,4 @@
-public enum SleeperPlayerStatus: String, Codable {
+public enum PlayerStatus: String, Codable {
     case active = "Active"
     case inactive = "Inactive"
     case ir = "Injured Reserve"

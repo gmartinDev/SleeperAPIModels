@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SleeperPlayer: Codable {
+public struct Player: Codable {
     public let playerId: String
     public let firstName: String
     public let lastName: String
@@ -8,9 +8,9 @@ public struct SleeperPlayer: Codable {
     public let age: Int?
     public let status: SleeperPlayerStatus?
     public let active: Bool
-    public let injuryStatus: SleeperInjuryStatus?
-    public let fantasyPositions: [SleeperNflPosition]?
-    public let position: SleeperNflPosition?
+    public let injuryStatus: InjuryStatus?
+    public let fantasyPositions: [NflPosition]?
+    public let position: NflPosition?
     public let number: Int?
     public let height: String?
     public let weight: String?

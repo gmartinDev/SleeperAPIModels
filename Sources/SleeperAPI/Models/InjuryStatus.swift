@@ -1,4 +1,4 @@
-public enum SleeperInjuryStatus: String, Codable {
+public enum InjuryStatus: String, Codable {
     case na = "NA"
     case questionable = "Questionable"
     case doubtful = "Doubtful"

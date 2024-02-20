@@ -1,4 +1,4 @@
-public enum SleeperNflPosition: String, Codable {
+public enum NflPosition: String, Codable {
     case qb = "QB"
     case rb = "RB"
     case fb = "FB"
