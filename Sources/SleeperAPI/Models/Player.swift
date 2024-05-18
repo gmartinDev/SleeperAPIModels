@@ -9,7 +9,7 @@ public struct Player: Codable {
     public let status: PlayerStatus?
     public let active: Bool
     public let injuryStatus: InjuryStatus?
-    public let fantasyPositions: [NflPosition]?
+    public let fantasyPositions: [NflPosition?]?
     public let position: NflPosition?
     public let number: Int?
     public let height: String?

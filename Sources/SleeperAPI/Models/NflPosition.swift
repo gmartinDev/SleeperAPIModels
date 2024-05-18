@@ -7,6 +7,7 @@ public enum NflPosition: String, Codable {
     case def = "DEF"
     case k = "K"
     case p = "P"
+    case kp = "K/P"
     case dl = "DL"
     case nt = "NT"
     case de = "DE"
