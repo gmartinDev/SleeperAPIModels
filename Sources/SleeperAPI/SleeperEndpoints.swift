@@ -31,11 +31,11 @@ public struct SleeperEndpoints {
     }
     
     // MARK: - Avatar Endpoints
-    public func getAvatar(id: String) -> String {
+    public static func getAvatar(id: String) -> String {
         "\(Constants.baseCDNURL)/avatars/\(id)"
     }
     
-    public func getAvatarThumbnail(id: String) -> String {
+    public static func getAvatarThumbnail(id: String) -> String {
         "\(Constants.baseCDNURL)/avatars/thumbs/\(id)"
     }
     
@@ -44,21 +44,21 @@ public struct SleeperEndpoints {
     /// This endpoint retrieves a specific league.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeague(leagueId: String) -> String {
+    public static func getLeague(leagueId: String) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)"
     }
     
     /// This endpoint retrieves all rosters in a league.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeagueRosters(leagueId: String) -> String {
+    public static func getLeagueRosters(leagueId: String) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/rosters"
     }
     
     /// This endpoint retrieves all users in a league.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeagueUsers(leagueId: String) -> String {
+    public static func getLeagueUsers(leagueId: String) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/users"
     }
     
@@ -67,7 +67,7 @@ public struct SleeperEndpoints {
     /// - Parameter week: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
     /// - Note: Each object in the list represents one team. The two teams with the same **matchup_id** match up against each other.
-    public func getLeagueMatchups(leagueId: String, week: Int) -> String {
+    public static func getLeagueMatchups(leagueId: String, week: Int) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/matchups/\(week)"
     }
     
@@ -75,7 +75,7 @@ public struct SleeperEndpoints {
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Parameter week: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeaguePlayoffBracket(leagueId: String, bracket: PlayoffBracket) -> String {
+    public static func getLeaguePlayoffBracket(leagueId: String, bracket: PlayoffBracket) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/\(bracket.rawValue)"
     }
     
@@ -83,14 +83,14 @@ public struct SleeperEndpoints {
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Parameter week: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeagueTransactions(leagueId: String, week: Int) -> String {
+    public static func getLeagueTransactions(leagueId: String, week: Int) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/transactions/\(week)"
     }
     
     /// This endpoint retrieves all traded picks in a league, including future picks.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getLeagueTradedPicks(leagueId: String) -> String {
+    public static func getLeagueTradedPicks(leagueId: String) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/traded_picks"
     }
     
@@ -102,28 +102,28 @@ public struct SleeperEndpoints {
     /// - Note: Keep in mind that a league can have multiple drafts, especially dynasty leagues.
     ///
     /// Drafts are sorted by most recent to earliest. Most leagues should only have one draft.
-    public func getLeagueDrafts(leagueId: String) -> String {
+    public static func getLeagueDrafts(leagueId: String) -> String {
         "\(Constants.baseAPIURL)/league/\(leagueId)/drafts"
     }
     
     /// This endpoint retrieves a specific draft.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getDraft(draftId: String) -> String {
+    public static func getDraft(draftId: String) -> String {
         "\(Constants.baseAPIURL)/draft/\(draftId)"
     }
     
     /// This endpoint retrieves all picks in a draft.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getDraftPicks(draftId: String) -> String {
+    public static func getDraftPicks(draftId: String) -> String {
         "\(Constants.baseAPIURL)/draft/\(draftId)/picks"
     }
     
     /// TThis endpoint retrieves all traded picks in a draft.
     /// - Parameter leagueId: The Id of the league to fetch
     /// - Returns: Endpoint `String` to use
-    public func getDraftTradedPicks(draftId: String) -> String {
+    public static func getDraftTradedPicks(draftId: String) -> String {
         "\(Constants.baseAPIURL)/draft/\(draftId)/traded_picks"
     }
     
@@ -132,7 +132,7 @@ public struct SleeperEndpoints {
     /// This endpoint retrieves all players in the nfl
     /// - Returns: Endpoint `String` to use
     /// - Important: Please use this call sparingly, as it is intended only to be used once per day at most to keep your player IDs updated. The average size of this query is 5MB.
-    public func getAllPlayers() -> String {
+    public static func getAllPlayers() -> String {
         "\(Constants.baseAPIURL)/players/nfl"
     }
 }
