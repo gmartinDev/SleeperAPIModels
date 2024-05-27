@@ -1,16 +1,16 @@
 import Foundation
 
 public struct NFLState: Codable {
-    let seasonHasScores: Bool
-    let leagueCreatedSeason: String
-    let displayWeek: Int
-    let startDate: Date?
-    let previousSeason: String
-    let leagueSeason: String
-    let season: String
-    let seasonType: String // off, pre, post, regular
-    let leg: Int
-    let week: Int
+    public let seasonHasScores: Bool
+    public let leagueCreatedSeason: String
+    public let displayWeek: Int
+    public let startDate: Date?
+    public let previousSeason: String
+    public let leagueSeason: String
+    public let season: String
+    public let seasonType: String // off, pre, post, regular
+    public let leg: Int
+    public let week: Int
     
     enum CodingKeys: String, CodingKey {
         case seasonHasScores = "season_has_scores"

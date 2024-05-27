@@ -7,19 +7,19 @@ public enum TransactionType: String, Codable {
 }
 
 public struct TransactionsModel: Codable {
-    let type: TransactionType
-    let transactionId: String
-    let statusUpdated: Double
-    let status: String
-    let rosterIds: [String]
-    let week: Int
-    let drops: [String: Int]?
-    let draftPicks: [TradedPicksModel]
-    let creator: String
-    let created: Double
-    let consenterIds: [String]
-    let addds: [String: Int]?
-    let waiverBudget: [WaiverBudgetModel]?
+    public let type: TransactionType
+    public let transactionId: String
+    public let statusUpdated: Double
+    public let status: String
+    public let rosterIds: [String]
+    public let week: Int
+    public let drops: [String: Int]?
+    public let draftPicks: [TradedPicksModel]
+    public let creator: String
+    public let created: Double
+    public let consenterIds: [String]
+    public let addds: [String: Int]?
+    public let waiverBudget: [WaiverBudgetModel]?
     
     enum CodingKeys: String, CodingKey {
         case type
@@ -39,7 +39,7 @@ public struct TransactionsModel: Codable {
 }
 
 public struct WaiverBudgetModel: Codable {
-    let sender: Int
-    let receiver: Int
-    let amount: Int
+    public let sender: Int
+    public let receiver: Int
+    public let amount: Int
 }

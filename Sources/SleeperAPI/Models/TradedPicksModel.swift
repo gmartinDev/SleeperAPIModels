@@ -1,11 +1,11 @@
 import Foundation
 
 public struct TradedPicksModel: Codable {
-    let season: Int
-    let week: Int
-    let rosterId: Int
-    let previousOwnerId: Int
-    let ownerId: Int
+    public let season: Int
+    public let week: Int
+    public let rosterId: Int
+    public let previousOwnerId: Int
+    public let ownerId: Int
     
     enum CodingKeys: String, CodingKey {
         case season

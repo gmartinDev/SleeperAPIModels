@@ -1,12 +1,12 @@
 import Foundation
 
 public struct UsersModel: Codable {
-    let userId: String
-    let leagueId: String
-    let isOwner: Bool?
-    let isBot: Bool
-    let displayName: String
-    let avatar: String
+    public let userId: String
+    public let leagueId: String
+    public let isOwner: Bool?
+    public let isBot: Bool
+    public let displayName: String
+    public let avatar: String
     
     enum CodingKeys: String, CodingKey {
         case userId = "user_id"
@@ -19,8 +19,8 @@ public struct UsersModel: Codable {
 }
 
 public struct UsersMetaDataModel: Codable {
-    let teamName: String?
-    let avatar: String?
+    public let teamName: String?
+    public let avatar: String?
 
     enum CodingKeys: String, CodingKey {
         case teamName = "team_name"
