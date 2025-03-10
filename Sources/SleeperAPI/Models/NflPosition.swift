@@ -4,6 +4,7 @@ public enum NflPosition: String, Codable {
     case fb = "FB"
     case wr = "WR"
     case te = "TE"
+    case ath = "ATH"
     case def = "DEF"
     case k = "K"
     case p = "P"
