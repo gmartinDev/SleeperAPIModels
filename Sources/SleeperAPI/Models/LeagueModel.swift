@@ -1,7 +1,7 @@
 import Foundation
 
 public struct LeagueModel: Codable {
-    public let totalRosters: String
+    public let totalRosters: Int
     public let status: String
     public let sport: String
     public let settings: String
